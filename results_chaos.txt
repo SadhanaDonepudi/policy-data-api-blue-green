@@ -1,0 +1,2 @@
+RAW requests=200 success=142 success_rate=0.7100 median_ms=53.64 p95_ms=59.61
+RESILIENT requests=200 success=195 success_rate=0.9750 median_ms=54.49 p95_ms=220.40 attempts=283 breaker_final=closed

@@ -1,0 +1,1 @@
+requests=300 success=300 success_rate=1.0000 median_ms=2.44 p95_ms=6.28 mean_ms=3.38

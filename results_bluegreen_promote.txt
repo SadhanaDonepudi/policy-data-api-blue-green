@@ -1,0 +1,8 @@
+canary blue=90 green=10 green_error_rate=0.000
+canary blue=50 green=50 green_error_rate=0.000
+canary blue=0 green=100 green_error_rate=0.000
+blue_healthy=True green_healthy=True
+canary blue=90 green=10 green_error_rate=0.000
+canary blue=50 green=50 green_error_rate=0.000
+canary blue=0 green=100 green_error_rate=0.000
+decision=promoted_green

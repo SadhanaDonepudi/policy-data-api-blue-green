@@ -1,0 +1,4 @@
+canary blue=90 green=10 green_error_rate=0.420
+blue_healthy=True green_healthy=True
+canary blue=90 green=10 green_error_rate=0.420
+decision=ROLLED_BACK_TO_BLUE (alarm: green error rate/health)

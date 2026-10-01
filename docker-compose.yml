@@ -1,0 +1,10 @@
+
+services:
+  blue:
+    build: .
+    environment: ["APP_VERSION=blue","CACHE_STRATEGY=ttl"]
+    ports: ["8021:8000"]
+  green:
+    build: .
+    environment: ["APP_VERSION=green","CACHE_STRATEGY=lru"]
+    ports: ["8022:8000"]

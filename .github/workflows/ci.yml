@@ -1,0 +1,19 @@
+
+name: ci-blue-green
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - run: pytest --cov=app -q
+  deploy-blue-green:
+    # Production process documentation: build image -> push ECR -> CodeDeploy blue/green via Terraform -> CloudWatch alarm gate -> auto-rollback.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Would run terraform apply + CodeDeploy deployment here in production (not executed for local-sim repo)."

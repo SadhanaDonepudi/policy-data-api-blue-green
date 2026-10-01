@@ -1,0 +1,3 @@
+A_none n=200 median_ms=2.773 mean_ms=3.061
+B_lru n=200 median_ms=2.374 mean_ms=2.706
+median_delta_pct=14.39 (positive = B faster) welch_t_log=5.08 significant_95=True
